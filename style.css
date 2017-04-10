@@ -2,8 +2,11 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-h4 {
+#subheader {
   color: grey;
+  font-family: "Roboto";
+  margin-left: 0px;
+  font-size: 30px;
 }
 #header {
   padding-top: 5vh;
@@ -14,6 +17,7 @@ a {
 }
 
 #logo {
+<<<<<<< Updated upstream
 	margin-left: -20px;
 }
 
@@ -27,3 +31,23 @@ a {
 	 height: 85%;
 	 position:fixed;
 	}
+=======
+	margin-left: -10px;
+}
+.socialmedia {
+	color: grey;
+	margin-right: 10px;
+	margin-top: -40px;
+	margin-bottom: 20px;
+}
+#burger {
+	color: #0080c6;
+}
+#banner {
+	background-color: #0080c6;
+	height: 25px;
+}
+.container {
+	//background-color: lightblue;
+}
+>>>>>>> Stashed changes
