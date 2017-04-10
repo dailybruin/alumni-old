@@ -13,6 +13,10 @@ a {
   display: inline-block;
 }
 
+#logo {
+	margin-left: -20px;
+}
+
 
 .card{
 
@@ -22,5 +26,4 @@ a {
 	 width: 60%;
 	 height: 85%;
 	 position:fixed;
-
-}
+	}
