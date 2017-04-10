@@ -33,6 +33,11 @@ a {
 	background-color: #0080c6;
 	height: 25px;
 }
+
+#submit_button {
+	float:right;
+}
+
 .container {
 	//background-color: lightblue;
 }
