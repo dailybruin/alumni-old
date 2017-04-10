@@ -2,76 +2,64 @@
 
 <head>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Satisfy|Lato|Montserrat|Roboto|Fugaz+One" rel="stylesheet">
+  <script type="text/javascript" src="index.js"></script>
 
   <title>Alumni Website | Daily Bruin</title>
-
 </head>
 
 <body>
 
+  <div id="banner"></div>
+
   <div class="container">
     <div class="row">
       <div class="col s8" id="header">
-        <h1>DAILY BRUIN</h1>
-        <h4>ALUMNI ASSOCIATION</h4>
+        <a href="http://dailybruin.com/">
+          <img id="logo" src="db_logo.svg" width="400">
+        </a>
+        <div id="subheader">ALUMNI ASSOCIATION</div>
       </div>
 
       <div class="col s4 right-align" id="header">
-        <i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
-        <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+        <ul id="slide-out" class="side-nav">
+          <li><div class="userView">
+            <a href="#"><img class="circle" src="db-round-logo.png"></a>
+          </div></li>
+          <li><a class="waves-effect" href="#!">The Daily Bruin</a></li>
+          <li><a class="waves-effect" href="#!">Newsletters</a></li>
+          <li><a class="waves-effect" href="#!">Events</a></li>
+          <li><div class="divider"></div></li>
+          <li><a class="waves-effect" href="#!">Contact</a></li>
+          <li><a class="waves-effect" href="#!">Visit the office!</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i id="burger" class="material-icons medium">menu</i></a>
       </div>
     </div>
 
     <br />
 
-    <div class="row">
-      <div class="col s3">
-        <div class="row">
-          <ul>
-            <li>
-              <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Donate</button>
-            </li>
-            <br />
-            <li>
-              <a href="#">The Daily Bruin</a>
-            </li>
-            <br />
-            <li>
-              <a href="#">Newsletters</a>
-            </li>
-            <br />
-            <li>
-              <a href="#">Events</a>
-            </li>
-            <br />
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <br />
-            <li>
-              <a href="#">Visit the office!</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div>
+      <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x socialmedia" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-twitter-square fa-3x socialmedia" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-instagram fa-3x socialmedia" aria-hidden="true"></i></a>
+    </div>
 
-      <div class="col s9">
+      <div class="col s12">
         <div class="row">
-          <ul>
-            <li>
-              <div class="col s12">
-                <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Alumni Association!</button>
-                <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Newsletters!</button>
-              </div>
-
-              <!-- <div class="col s6">
-                <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Newsletters!</button>
-              </div> -->
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <div class="col s12">
+            <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Donate</button>
+              <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Alumni Association!</button>
+              <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Newsletters!</button>
+            </div>
+          </li>
+        </ul>
         </div>
         <p>
           Dear Alumni,
@@ -98,5 +86,3 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src="https://use.fontawesome.com/d29dec308b.js"></script>
-
-</body>
