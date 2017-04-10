@@ -12,3 +12,6 @@ a {
   text-decoration: underline;
   display: inline-block;
 }
+#logo {
+	margin-left: -20px;
+}
