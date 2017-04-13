@@ -5,6 +5,9 @@ $(document).ready(function() {
 	    $(this).material_select();
   	});
 
+	loadStates();
+	loadCountries();
+
   	var $selectDropdown = 
       $("#yearpicker")
         .empty()
@@ -22,3 +25,61 @@ $(document).ready(function() {
 	// trigger dropdown refresh
     $selectDropdown.trigger('contentChanged');
   });
+
+function loadStates()
+{
+	var lines;
+
+	var $statesDropdown = 
+      $("#statepicker")
+        .empty()
+        .html(' ');
+
+	jQuery.ajax({
+		url: "states.txt",
+		dataType: "text",
+		success: function (data) {
+			lines = data.split('\n');
+
+			for (var i = 0; i < lines.length; i++)
+			{
+				$statesDropdown.append(
+			      $("<option></option>")
+			        .attr("value",lines[i])
+			        .text(lines[i])
+			    );
+			}
+
+			$statesDropdown.trigger('contentChanged');
+		}
+	});
+}
+
+function loadCountries()
+{
+	var lines;
+
+	var $countryDropdown = 
+      $("#countrypicker")
+        .empty()
+        .html(' ');
+
+	jQuery.ajax({
+		url: "countries.txt",
+		dataType: "text",
+		success: function (data) {
+			lines = data.split('\n');
+
+			for (var i = 0; i < lines.length; i++)
+			{
+				$countryDropdown.append(
+			      $("<option></option>")
+			        .attr("value",lines[i])
+			        .text(lines[i])
+			    );
+			}
+
+			$countryDropdown.trigger('contentChanged');
+		}
+	});
+}
