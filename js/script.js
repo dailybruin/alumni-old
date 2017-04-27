@@ -1,5 +1,11 @@
 $(document).ready(function() {
-    $('select').material_select();
+  $('#signup').hide();
+  // $('#myselect').change(function () {
+  //   $('.gender').hide();
+  //   $('#'+$(this).val()).show();
+  // })
+
+  $('select').material_select();
 
 	$('select').on('contentChanged', function() {
 	    $(this).material_select();
@@ -8,13 +14,12 @@ $(document).ready(function() {
 	loadStates();
 	loadCountries();
 
-  	var $selectDropdown = 
+  var $selectDropdown =
       $("#yearpicker")
         .empty()
         .html(' ');
 
-    for (i = new Date().getFullYear(); i > 1918; i--)
-	{
+  for (i = new Date().getFullYear(); i > 1918; i--) {
 		$selectDropdown.append(
 	      $("<option></option>")
 	        .attr("value",i)
@@ -23,14 +28,14 @@ $(document).ready(function() {
 	}
 
 	// trigger dropdown refresh
-    $selectDropdown.trigger('contentChanged');
-  });
+  $selectDropdown.trigger('contentChanged');
+});
 
 function loadStates()
 {
 	var lines;
 
-	var $statesDropdown = 
+	var $statesDropdown =
       $("#statepicker")
         .empty()
         .html(' ');
@@ -59,7 +64,7 @@ function loadCountries()
 {
 	var lines;
 
-	var $countryDropdown = 
+	var $countryDropdown =
       $("#countrypicker")
         .empty()
         .html(' ');
