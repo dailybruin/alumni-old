@@ -74,16 +74,17 @@
     <!-- Signup -->
 
     <div class="row">
-          <form class="col s12">
+        <form id="gform" class="col s12" method="POST"
+        action="https://script.google.com/macros/s/AKfycbzsUnruRZJ6YScdd0vWXKU3E5JLEGb0ssrJR15A6ZNODc3oUys/exec">
 
             <!-- Name (form) -->
             <div class="row">
               <div class="input-field col s6">
-                <input  id="first_name" type="text" class="validate">
+                <input name="first_name" type="text" class="validate">
                 <label for="first_name">First Name</label>
               </div>
               <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
+                <input name="last_name" type="text" class="validate">
                 <label for="last_name">Last Name</label>
               </div>
             </div>
@@ -91,31 +92,31 @@
             <!-- Address Lns 1/2 (form) -->
             <div class="row">
               <div class="input-field col s9">
-                <input  id="add_ln_1" type="text" class="validate">
+                <input name="add_ln_1" type="text" class="validate">
                 <label for="add_ln_1">Address Line 1</label>
               </div>
               <div class="input-field col s9">
-                <input  id="add_ln_2" type="text" class="validate">
+                <input name="add_ln_2" type="text" class="validate">
                 <label for="add_ln_2">Address Line 2</label>
               </div>
             </div>
 
             <div class="row">
                <div class="input-field col s8">
-                <select id="statepicker">
+                <select id="statepicker" name="state">
                   <option value="" disabled selected>Choose your option</option>
                 </select>
                 <label>State (if in USA)</label>
               </div>
               <div class="input-field col s4">
-                <input  id="zip" type="text" class="validate">
+                <input name="zip" type="text" class="validate">
                 <label for="zip">Zip Code</label>
               </div>
             </div>
 
             <div class="row">
                <div class="input-field col s12">
-                <select id="countrypicker">
+                <select id="countrypicker" name="country">
                   <option value="" disabled selected>Choose your option</option>
                 </select>
                 <label>Country</label>
@@ -127,12 +128,12 @@
             <div class=row>
               <div class="input-field col s6">
                 <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
+                <input name="icon_telephone" type="tel" class="validate">
                 <label for="icon_telephone">Phone Number</label>
               </div>
               <div class="input-field col s6">
                 <i class="material-icons prefix">email</i>
-                <input id="email" type="email" class="validate">
+                <input name="email" type="email" class="validate">
                 <label for="email">Email</label>
               </div>
             </div>
@@ -140,7 +141,7 @@
             <!-- Position/Grad Year (form) -->
             <div class="row">
               <div class="input-field col s6">
-                <input  id="position" type="text" class="validate">
+                <input name="position" type="text" class="validate">
                 <label for="position">Position(s) you held</label>
               </div>
               <div class="input-field col s6">
@@ -154,18 +155,20 @@
             <!-- Current Occupation (form) -->
             <div class="row">
               <div class="input-field col s6">
-                <input  id="occupation" type="text" class="validate">
+                <input name="occupation" type="text" class="validate">
                 <label for="occupation">Current Occupation</label>
               </div>
             </div>
+
+            <button class="btn-large waves-effect waves-light light-blue" type="submit" id="submit_button">Send
+               <i class="material-icons right">send</i>
+            </button>
+
           </form>
-
-          <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action" id="submit_button">Submit
-             <i class="material-icons right">send</i>
-          </button>
-
     </div>
-
+    <div style="display:none;" id="thankyou_message">
+      <h2>Thanks!</h2>
+    </div>
   </div>
 </div>
 
@@ -175,4 +178,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 <script src="https://use.fontawesome.com/d29dec308b.js"></script>
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
