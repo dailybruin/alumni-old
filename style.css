@@ -2,36 +2,45 @@ h1 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 #subheader {
   color: grey;
   font-family: "Roboto";
-  margin-left: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
+
+hr {
+  border-top: #efefef;
+}
+
 #header {
-  padding-top: 5vh;
+  width: 80%;
+  margin: auto;
+  padding-top: 4vh;
 }
+
 a {
   text-decoration: underline;
   display: inline-block;
 }
 
 #logo {
-	margin-left: -9px;
+  margin-left: -9px;
 }
 
 .socialmedia {
-	color: grey;
-	margin-right: 10px;
-	margin-top: -40px;
-	margin-bottom: 20px;
+  color: grey;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
+
 #burger {
-	color: #0080c6;
+  color: #0080c6;
 }
+
 #banner {
-	background-color: #0080c6;
-	height: 25px;
+  background-color: #0080c6;
+  height: 25px;
 }
 
 #footer {
@@ -40,26 +49,19 @@ a {
 }
 
 #circle-logo {
-  height:50px;
+  height: 50px;
   width: 50px;
-
-
 }
 
 #submit_button {
-	float:right;
+  float: right;
 }
 
-.container {
-	//background-color: lightblue;
-}
-
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 #subheader1 {
@@ -67,4 +69,33 @@ form
   font-family: "Roboto";
   margin-left: 45%;
   font-size: 30px;
+}
+
+#content {
+  min-height: calc(100vh - 10vh);
+}
+
+#footer {
+  height: 8vh;
+  line-height: 8vh;
+  margin-bottom: 0px;
+  background: #efefef;
+}
+
+.heart {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  height: 15px;
+  width: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 60%;
 }

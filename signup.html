@@ -2,35 +2,37 @@
 
 <head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico|Satisfy|Lato|Montserrat|Roboto|Fugaz+One" rel="stylesheet">
-  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <title>Alumni Website | Daily Bruin</title>
 </head>
 
 <body>
 
-  <div id="banner"></div>
+  <!--<div id="banner"></div>-->
 
-  <div class="container">
+  <div id="content">
 
     <!-- Top -->
     <div id="header">
       <div class="row">
-        <div class="col s2">
+        <div class="col s1 offset-s1">
           <ul id="slide-out" class="side-nav">
-            <li><div class="userView">
-              <a href="#"><img class="circle" src="db-round-logo.png"></a>
-            </div></li>
+            <li>
+              <div class="userView">
+                <a href="#"><img class="circle" src="db-round-logo.png"></a>
+              </div>
+            </li>
             <li><a class="waves-effect" href="index.html">Home</a></li>
             <li><a class="waves-effect" href="#!">The Daily Bruin</a></li>
             <li><a class="waves-effect" href="#!">Newsletters</a></li>
             <li><a class="waves-effect" href="#!">Events</a></li>
-            <li><div class="divider"></div></li>
+            <li>
+              <div class="divider"></div>
+            </li>
             <li><a class="waves-effect" href="signup.html">Contact</a></li>
             <li><a class="waves-effect" href="contact.html">Visit the office!</a></li>
           </ul>
@@ -39,145 +41,156 @@
           </a>
         </div>
 
-        <div class="col s10 right-align">
+        <div class="col s8 center">
+          <a href="http://dailybruin.com/">
+            <img id="logo" src="db_logo.svg" width="400">
+          </a>
+
+          <div id="subheader">ALUMNI ASSOCIATION</div>
+        </div>
+
+        <div class="col s2">
+          <div>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x socialmedia" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x socialmedia" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-3x socialmedia" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!--<div class="col s10 right-align">
           <ul>
             <li>
               <div class="col s12">
-              <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Donate</button>
+                <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Donate</button>
                 <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action" href="signup.html">Sign up for Alumni Association!</button>
                 <button class="btn-large waves-effect waves-light light-blue" type="submit" name="action">Sign up for Newsletters!</button>
               </div>
             </li>
           </ul>
-        </div>
+        </div>-->
+
       </div>
     </div>
 
-    <hr />
+    <div class="container">
 
-    <!-- Title -->
-    <a href="http://dailybruin.com/">
-      <img id="logo" src="db_logo.svg" width="400">
-    </a>
-    <div id="subheader">ALUMNI ASSOCIATION</div>
+      <hr />
 
-    <br />
+      <br />
 
-    <!-- Social Media -->
+      <!-- Signup -->
 
-    <div>
-      <a href="https://www.facebook.com"><i class="fa fa-facebook-square fa-3x socialmedia" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-twitter-square fa-3x socialmedia" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-instagram fa-3x socialmedia" aria-hidden="true"></i></a>
-    </div>
+      <div class="row">
+        <form id="gform" class="col s12" method="POST" action="https://script.google.com/macros/s/AKfycbzsUnruRZJ6YScdd0vWXKU3E5JLEGb0ssrJR15A6ZNODc3oUys/exec">
 
-    <!-- Signup -->
-
-    <div class="row">
-        <form id="gform" class="col s12" method="POST"
-        action="https://script.google.com/macros/s/AKfycbzsUnruRZJ6YScdd0vWXKU3E5JLEGb0ssrJR15A6ZNODc3oUys/exec">
-
-            <!-- Name (form) -->
-            <div class="row">
-              <div class="input-field col s6">
-                <input name="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input name="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
+          <!-- Name (form) -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
             </div>
-
-            <!-- Address Lns 1/2 (form) -->
-            <div class="row">
-              <div class="input-field col s9">
-                <input name="add_ln_1" type="text" class="validate">
-                <label for="add_ln_1">Address Line 1</label>
-              </div>
-              <div class="input-field col s9">
-                <input name="add_ln_2" type="text" class="validate">
-                <label for="add_ln_2">Address Line 2</label>
-              </div>
+            <div class="input-field col s6">
+              <input name="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
             </div>
+          </div>
 
-            <div class="row">
-               <div class="input-field col s8">
-                <select id="statepicker" name="state">
+          <!-- Address Lns 1/2 (form) -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="add_ln_1" type="text" class="validate">
+              <label for="add_ln_1">Address Line 1</label>
+            </div>
+            <div class="input-field col s6">
+              <input name="add_ln_2" type="text" class="validate">
+              <label for="add_ln_2">Address Line 2</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s8">
+              <select id="statepicker" name="state">
                   <option value="" disabled selected>Choose your option</option>
                 </select>
-                <label>State (if in USA)</label>
-              </div>
-              <div class="input-field col s4">
-                <input name="zip" type="text" class="validate">
-                <label for="zip">Zip Code</label>
-              </div>
+              <label>State (if in USA)</label>
             </div>
+            <div class="input-field col s4">
+              <input name="zip" type="text" class="validate">
+              <label for="zip">Zip Code</label>
+            </div>
+          </div>
 
-            <div class="row">
-               <div class="input-field col s12">
-                <select id="countrypicker" name="country">
+          <div class="row">
+            <div class="input-field col s12">
+              <select id="countrypicker" name="country">
                   <option value="" disabled selected>Choose your option</option>
                 </select>
-                <label>Country</label>
-              </div>
+              <label>Country</label>
             </div>
+          </div>
 
 
-            <!-- Contact Info (form) -->
-            <div class=row>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input name="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Phone Number</label>
-              </div>
-              <div class="input-field col s6">
-                <i class="material-icons prefix">email</i>
-                <input name="email" type="email" class="validate">
-                <label for="email">Email</label>
-              </div>
+          <!-- Contact Info (form) -->
+          <div class=row>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">phone</i>
+              <input name="icon_telephone" type="tel" class="validate">
+              <label for="icon_telephone">Phone Number</label>
             </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">email</i>
+              <input name="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
 
-            <!-- Position/Grad Year (form) -->
-            <div class="row">
-              <div class="input-field col s6">
-                <input name="position" type="text" class="validate">
-                <label for="position">Position(s) you held</label>
-              </div>
-              <div class="input-field col s6">
-                <select name="yearpicker" id="yearpicker">
+          <!-- Position/Grad Year (form) -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="position" type="text" class="validate">
+              <label for="position">Position(s) you held</label>
+            </div>
+            <div class="input-field col s6">
+              <select name="yearpicker" id="yearpicker">
                   <option value="" disabled selected>Choose your option</option>
                 </select>
-                <label>Year of Graduation</label>
-              </div>
+              <label>Year of Graduation</label>
             </div>
+          </div>
 
-            <!-- Current Occupation (form) -->
-            <div class="row">
-              <div class="input-field col s6">
-                <input name="occupation" type="text" class="validate">
-                <label for="occupation">Current Occupation</label>
-              </div>
+          <!-- Current Occupation (form) -->
+          <div class="row">
+            <div class="input-field col s6">
+              <input name="occupation" type="text" class="validate">
+              <label for="occupation">Current Occupation</label>
             </div>
+          </div>
 
-            <button class="btn-large waves-effect waves-light light-blue" type="submit" id="submit_button">Send
+          <button class="btn-large waves-effect waves-light light-blue" type="submit" id="submit_button">Send
                <i class="material-icons right">send</i>
             </button>
 
-          </form>
+        </form>
+      </div>
+      <div style="display:none;" id="thankyou_message">
+        <h2>Thanks!</h2>
+      </div>
     </div>
-    <div style="display:none;" id="thankyou_message">
-      <h2>Thanks!</h2>
-    </div>
-  </div>
-  <script data-cfasync="false" type="text/javascript" -->
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
-<div id="footer">
-  <img id="circle-logo" src="db-round-logo.png"> </a>
+<div class="center" id="footer">
+  Made with <span class="heart"></span> by
+  <a href="#">Katie Aspinwall</a>,
+  <a href="#">Benson Han</a>,
+  <a href="#">Lisa He</a>,
+  <a href="#">Austin Ma</a>,
+  <a href="#">Leo Siouw</a>,
+  <a href="#">Nathan Tsai</a>, and
+  <a href="#">Sharon Zhen</a>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
 <script src="https://use.fontawesome.com/d29dec308b.js"></script>
+<script type="text/javascript" src="index.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
