@@ -72,13 +72,13 @@ form {
 }
 
 #content {
-  min-height: calc(100vh - 10vh);
+  min-height: calc(100vh - 8vh);
 }
 
 #footer {
   height: 8vh;
   line-height: 8vh;
-  margin-bottom: 0px;
+  bottom: 0;
   background: #efefef;
 }
 
@@ -99,3 +99,53 @@ a {
 .container {
   width: 60%;
 }
+
+
+/* label color */
+
+.input-field label {
+  color: #000;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+  color: #0080c6;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #0080c6;
+  box-shadow: 0 1px 0 0 #0080c6;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #0080c6;
+  box-shadow: 0 1px 0 0 #0080c6;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #0080c6;
+  box-shadow: 0 1px 0 0 #0080c6;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+  color: #0080c6;
+}
+
+/*#newsletter {
+  width: 60%;
+  margin: auto;
+}*/
